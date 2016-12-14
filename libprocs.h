@@ -76,18 +76,18 @@ int run_program( const char*,     // program name
                  );
 
 /* Clear */
-inline void resuse_start( struct RESUSE* );
+void resuse_start( struct RESUSE* );
 
 /* Simply end with time recording */
-inline int resuse_bare_measure_end( struct RESUSE* );
+int resuse_bare_measure_end( struct RESUSE* );
 
 /* Add two program's resources */
-inline void resuse_add( struct RESUSE*, struct RESUSE* );
+void resuse_add( struct RESUSE*, struct RESUSE* );
 
 /* Get how many microseconds a program occupies. */
-inline int time_used( struct RESUSE* );
+int time_used( struct RESUSE* );
 
 /* Get the memory peak a program reaches. */
-inline int mem_used( struct RESUSE* );
+int mem_used( struct RESUSE* );
 
 #endif /* _RESUSE_H */

@@ -5,7 +5,7 @@ DUMP_FLAGS= #-fdump-ipa-cgraph
 LINKLIB=
 MACROS= -DDEBUG 
 HEADERS=consts.h judge.h runtime.h type_def.h file.h libsys.h libprocs.h
-SOURCES=file.c judge.c libsys.c main.c libprocs.c runtime.c #instrument.c
+SOURCES=libprocs.c file.c judge.c libsys.c main.c runtime.c #instrument.c
 
 
 all: tester
